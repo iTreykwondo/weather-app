@@ -8,4 +8,49 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #ff8882;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.card {
+  background-color: #ffe4b5;
+  border: 2px solid black;
+  max-width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 40px auto 0;
+  gap: 25px;
+}
+
+.card .weather-info {
+  display: flex;
+  gap: 50px;
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input {
+  height: 35px;
+  width: 350px;
+  text-indent: 10px;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+button {
+  padding: 8px 16px;
 }
