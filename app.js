@@ -3,9 +3,8 @@ const searchBar = document.querySelector("input");
 const errorDiv = document.querySelector(".error");
 
 async function fetchWeatherData(city) {
-  city = searchBar.value;
-
   try {
+    city = searchBar.value;
     const response = await fetch(
       `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=461bdbb7ad11819525963162ffe0d2a9&units=imperial`,
       { mode: "cors" }
